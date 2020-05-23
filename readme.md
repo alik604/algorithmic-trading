@@ -7,4 +7,4 @@
 * Algo trading 
 * stock price prediction 
 * Optimizing _ETF_ holdings
-* “portfolio” theory and other learning 
+* Portfolio theory and other learning 

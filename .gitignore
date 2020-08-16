@@ -1,5 +1,5 @@
 .ipynb_checkpoints/*
 .virtual_documents/*
-.ipynb_checkpoints/
-.ipynb_checkpoints/*
-
+.ipynb_checkpoints\
+.ipynb_checkpoints\*
+.idea/

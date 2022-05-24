@@ -6,19 +6,19 @@
 
 ## log returns 
 
-`MSFT['log_return'] = np.log(MSFT['Adj Close'] / MSFT['Adj Close'].shift(1))`
-
+`df['log_return'] = np.log(1+df.pct_change())`
+`df['log_return'] = np.log(df/df.shift(1))`
 
 
 ## Cumulative returns 
 
-`aapl['Cumulative'] = aapl['Close']/aapl['Close'].iloc[0]` 
+`aapl['Cumulative'] = df/df.iloc[0]` 
 
 
 
 ## percentage change 
 
-`tesla['returns'] = (tesla['Close'] / tesla['Close'].shift(1) ) - 1` 
+`tesla['returns'] = (df / df.shift(1)) - 1` 
 
 
 

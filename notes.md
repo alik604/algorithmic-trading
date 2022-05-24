@@ -41,8 +41,13 @@ Take the return of the portfolio and subtract the risk free rate.
 divided by the standard deviation of the portfolio’s excess return
 
 ## Sortino ratio 
-Take the return of the portfolio and subtract the risk free rate. 
-divided by the standard deviation of the downside
+Take the return of the portfolio and ~subtract the risk free rate~ divided by the standard deviation of the downside. .... no no no!!! **investopedia is wrong**.
+
+* [read this](https://quant.stackexchange.com/q/68556/61970)
+* [and this](https://en.wikipedia.org/wiki/Sortino_ratio)
+
+`S=R−T/TDD; where TDD is sqrt(mean(min(0, X-T))^2); where T is the target return.`
+
 
 > Because the Sortino ratio focuses only on the negative deviation of a portfolio's returns from the mean, it is thought to give a better view of a portfolio's risk-adjusted performance since positive volatility is a benefit.
 
@@ -66,10 +71,11 @@ R(m) = the realized return of the appropriate market index
 R(f) = the risk-free rate of return for the time period
 B = the beta of the portfolio of investment with respect to the chosen market index
 
-
 ## Beta
-Corvar(stock, market)/ Var(market)
+Corvar(stock, market)/Var(market)
 
-### note
+Note: might be the same linear regression's slope, according to a random youtube video...
+
+### Notes
 - downside beta measures a stock's association with the overall stock market (risk) only on days when the market’s return is negative
 - there should be a Beta for "the downside", like the std in `Sortino ratio`

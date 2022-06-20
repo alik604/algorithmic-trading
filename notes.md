@@ -12,22 +12,22 @@
 
 ## Cumulative returns 
 
-`aapl['Cumulative'] = df/df.iloc[0]` 
+`df['Cumulative'] = df/df.iloc[0]` 
 
 
 
 ## percentage change 
 
-`tesla['returns'] = (df / df.shift(1)) - 1` 
+`df['returns'] = (df / df.shift(1)) - 1` 
 
 
 
 ## rolling mean
 
 ```python
-gm['MA50'] = gm['Open'].rolling(50).mean()
-gm['MA200'] = gm['Open'].rolling(200).mean()
-gm[['Open','MA50','MA200']].plot(label='gm',figsize=(16,8))
+df['MA50'] = df['Open'].rolling(50).mean()
+df['MA200'] = df['Open'].rolling(200).mean()
+df[['Open','MA50','MA200']].plot(label='df',figsize=(16,8))
 ```
 
 
